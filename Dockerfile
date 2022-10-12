@@ -1,6 +1,6 @@
 FROM node:16
 LABEL maintainer="antonreal93@gmail.com"
-# Chrome dependency Instalation
+# Dependency Instalation
 RUN apt-get update && apt-get install -y \
     fonts-liberation \
     libasound2 \
@@ -22,8 +22,8 @@ RUN apt-get update && apt-get install -y \
     libxrandr2 \
     xdg-utils \
     libu2f-udev \
-    libvulkan1
- # Chrome instalation
-RUN apt-get install -y wget
+    libvulkan1 \
+    wget
+# Chrome instalation
 RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN apt-get install ./google-chrome-stable_current_amd64.deb
