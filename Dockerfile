@@ -1,4 +1,9 @@
 FROM node:16
+
+MAINTAINER Anton Limar <antonreal93@gmail.com>
+
+ARG DEBIAN_FRONTEND=noninteractive
+
 LABEL maintainer="antonreal93@gmail.com"
 # Dependency Instalation
 RUN apt-get update && apt-get install -y \
