@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:16.13.1
 
 MAINTAINER Anton Limar <antonreal93@gmail.com>
 
